@@ -15,10 +15,10 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
 
         if (Intent.ACTION_INPUT_METHOD_CHANGED.equals(intent.getAction())){
-            Toast.makeText(context, "CAMBIO DE METODO DE ENTRADA", Toast.LENGTH_LONG).show();
+            Toast.makeText(context, "CAmbios", Toast.LENGTH_LONG).show();
         }else if(intent.getAction().equals(context.getString(R.string.action_broadcast))){
 
-            Toast.makeText(context, "CACHANDO MIS PROPIAS DIFUCIONES: " +
+            Toast.makeText(context, "Captando las difuciones: " +
                     intent.getStringExtra("key1"), Toast.LENGTH_LONG).show();
 
         }
